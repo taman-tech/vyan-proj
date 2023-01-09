@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vyan Project</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+      <div class="vyan">
+<!---- ama listy menu a-->
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a  href="">Home</a></li>
+                <li><a  href="cv/cv.html">About</a></li>
+                <li><a  href="">more</a></li>
+                <li><a  href="">info</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+<!---- ama listy menu a-->
+
+
+        <div class="lamp-cont">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+
+        <div class="text-cont">
+            <h1>Vyan Project</h1>
+            <br>
+            <p>See My Own CV Resume </p>
+            <a href="cv/cv.html">show more</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+      </div>  
+
+      <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light")
+        
+
+        function togglebtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+
+        }
+      </script>
+    </body>
+</html>
